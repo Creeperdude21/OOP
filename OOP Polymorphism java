@@ -1,0 +1,26 @@
+class Main {
+  public static void main(String[] args) {
+    Animal obj = new Animal();
+    obj.animalSound();
+    lion obj1 = new lion();
+    obj1.animalSound();
+    penguin obj2 = new penguin();
+    obj2.animalSound();
+  }
+}
+
+class Animal{
+  public void animalSound(){
+    System.out.println("All animals make sounds");
+  }
+}
+class lion extends Animal{
+  public void animalSound(){
+    System.out.println("The lion says: roar!");
+  }
+}
+class penguin extends Animal{
+  public void animalSound(){
+    System.out.println("The penguin says: squawk!");
+  }
+}
